@@ -36,8 +36,7 @@ class _GroceryListState extends State<GroceryList> {
 
   @override
   Widget build(BuildContext context) {
-    Widget content = Center(child: const Text('No items added yet.'));
-
+    Widget content = const Center(child: Text('No items added yet.'));
     if (_groceryItems.isNotEmpty) {
       content = ListView.builder(
         itemCount: _groceryItems.length,

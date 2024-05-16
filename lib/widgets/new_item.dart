@@ -79,6 +79,7 @@ class _NewItemState extends State<NewItem> {
                             int.tryParse(value)! <= 0) {
                           return 'Must be a valid positive number.';
                         }
+                        return null;
                       },
                       onSaved: (value) {
                         _enteredQuantity = int.parse(value!);
